@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Fila - Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.jpg" alt="Logo Aluguel de Fila">
+                    Aluguel de Fila
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacao">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobre.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="contato-box">
+            <h2>Fale Conosco e Agende sua Fila</h2>
+            <p>Preencha os dados abaixo para combinar o local, o horário e o tipo de fila que você quer deixar com a gente.</p>
+
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="text" id="telefone" placeholder="(00) 00000-0000">
+
+                <label for="servico">Tipo de Fila</label>
+                <select id="servico">
+                    <option>Fila de Banco e Lotérica</option>
+                    <option>Grade de Show e Festival</option>
+                    <option>Caixa de Supermercado</option>
+                    <option>Lançamento de Celular e Games</option>
+                    <option>Recepção de Clínica e Exames</option>
+                    <option>Cartório e Documentos</option>
+                </select>
+
+                <label for="mensagem">Local e Horário</label>
+                <textarea id="mensagem" rows="4" placeholder="Ex.: agência do centro, amanhã às 9h"></textarea>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+
+        <section id="tabela-precos">
+            <h2>Resumo dos Serviços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Atendimento</th>
+                        <th>Valor Promocional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila de Banco e Lotérica</td>
+                        <td>24h</td>
+                        <td>R$ 999.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Fila de Show e Festival</td>
+                        <td>24h</td>
+                        <td>R$ 100.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Caixa de Supermercado</td>
+                        <td>24h</td>
+                        <td>R$ 7.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Lançamento de Celular e Games</td>
+                        <td>24h</td>
+                        <td>R$ 999,45</td>
+                    </tr>
+                    <tr>
+                        <td>Recepção de Clínica e Exames</td>
+                        <td>24h</td>
+                        <td>R$ 1.004,67</td>
+                    </tr>
+                    <tr>
+                        <td>Cartório e Documentos</td>
+                        <td>24h</td>
+                        <td>R$ 379,80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../img/logo.jpg" alt="Logo Aluguel de Fila">
+        <p>Aluguel de Fila - Você relaxa, a gente enfrenta a fila!</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
