@@ -8,13 +8,32 @@ body {
 
 header {
     background-color: #0b2545;
-    padding: 10px 0;
+    padding: 12px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca-topo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.marca-topo:hover {
+    color: #ffcc00;
 }
 
 header img,
-nav img,
 .logo-topo {
-    height: 100px;
+    height: 200px;
     width: auto;
     background-color: #ffffff;
     padding: 3px;
@@ -22,13 +41,30 @@ nav img,
     margin-right: 8px;
 }
 
-nav a {
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul a {
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
+    text-decoration: none;
 }
 
-nav a:hover {
+header ul a:hover,
+header ul a.ativo {
     color: #ffcc00;
 }
 
@@ -137,8 +173,8 @@ h2 {
 }
 
 .card img {
-    width: 100%;
-    height: 150px;
+    width: auto;
+    height: 300px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -149,16 +185,23 @@ h2 {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     color: #0b2545;
     margin-bottom: 8px;
 }
 
 .card-text {
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.45;
     margin-bottom: 10px;
+}
+
+.preco-card {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0b2545;
+    margin-bottom: 12px;
 }
 
 .botao {
@@ -264,15 +307,6 @@ form button:hover {
     margin-top: 40px;
     text-align: center;
     display: block;
-}
-
-.rodape img {
-    height: 35px;
-    width: auto;
-    background-color: #ffffff;
-    padding: 3px;
-    border-radius: 5px;
-    margin-bottom: 8px;
 }
 
 .rodape p {

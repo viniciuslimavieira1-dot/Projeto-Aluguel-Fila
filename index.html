@@ -10,29 +10,16 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="./index.html">
-                    <img src="./img/logo.jpg" alt="Logo Aluguel de Fila" class="logo-topo">
-                    Aluguel de Fila
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuNavegacao">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/sobre.html">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contato.html">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="container topo-flex">
+            <a class="marca-topo" href="./index.html">
+                <img src="./img/logo.jpg" alt="Logótipo Aluguel de Fila" class="logo-topo">
+                <span>Aluguel de Fila</span>
+            </a>
+            <ul class="menu-links">
+                <li><a href="./index.html" class="ativo">Home</a></li>
+                <li><a href="./pages/sobre.html">Sobre Nós</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -41,7 +28,7 @@
             <h2>Sobre a Empresa</h2>
             <p>Perder horas em pé esperando em filas de banco, shows ou repartições públicas é coisa do passado. A Aluguel de Fila chegou para ajudar quem não quer perder tempo, colocando gente para enfrentar a espera no seu lugar.</p>
             <p>É bem simples: você diz onde é a fila e o horário, e alguém da equipe vai lá guardar o seu lugar. Enquanto a gente fica esperando, você faz suas coisas tranquilo e só chega na hora de ser atendido.</p>
-            <p>Tem atendimento 24h e equipe certa para segurar a vaga com segurança. Com a promoção de 99% de desconto, dá para economizar tempo pagando só R$ 1,00.</p>
+            <p>Tem atendimento 24h e equipe certa para segurar a vaga com segurança, com valores para todo tipo de fila.</p>
         </section>
 
         <section>
@@ -63,77 +50,65 @@
         </section>
 
         <section>
-            <h2 class="text-center">Serviços</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_banco.jpg" class="card-img-top" alt="Fila de Banco">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Fila de Banco e Lotérica</h3>
-                            <p class="card-text">A gente fica na fila do banco ou lotérica para você não perder a manhã inteira.</p>
-                            <p class="fw-bold">R$ 688,78</p>
-                            <a href="./pages/contato.html" class="botao">Contratar</a>
-                        </div>
+            <h2 class="text-center mb-4">Serviços</h2>
+            <div class="grade-servicos">
+                <div class="card">
+                    <img src="./img/fila_banco.jpg" alt="Fila de Banco">
+                    <div class="card-body">
+                        <h3 class="card-title">Fila de Banco e Lotérica</h3>
+                        <p class="card-text">A gente fica na fila do banco ou lotérica para você não perder a manhã inteira.</p>
+                        <p class="preco-card">R$ 800,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_show.jpg" class="card-img-top" alt="Fila de Show">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Grade de Show e Festival</h3>
-                            <p class="card-text">Guardamos lugar na grade do show para você chegar depois e ficar bem na frente.</p>
-                            <p class="fw-bold">R$ 2.300,49</p>
-                            <a href="./pages/contato.html" class="botao">Contratar</a>
-                        </div>
+                <div class="card">
+                    <img src="./img/fila_show.jpg" alt="Fila de Show">
+                    <div class="card-body">
+                        <h3 class="card-title">Grade de Show e Festival</h3>
+                        <p class="card-text">Guardamos lugar na grade do show para você chegar depois e ficar bem na frente.</p>
+                        <p class="preco-card">R$ 10.000,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_mercado.jpg" class="card-img-top" alt="Fila de Supermercado">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Caixa de Supermercado</h3>
-                            <p class="card-text">Seguramos a sua vez no caixa enquanto você pega o resto das compras.</p>
-                            <p class="fw-bold">R$ 410,00</p>
-                            <a href="./pages/contato.html" class="botao">Contratar</a>
-                        </div>
+                <div class="card">
+                    <img src="./img/fila_mercado.jpg" alt="Fila de Supermercado">
+                    <div class="card-body">
+                        <h3 class="card-title">Caixa de Supermercado</h3>
+                        <p class="card-text">Seguramos a sua vez no caixa enquanto você pega o resto das compras.</p>
+                        <p class="preco-card">R$ 700,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_lancamento.jpg" class="card-img-top" alt="Lançamento de Eletrônicos">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Lançamento de Celular e Games</h3>
-                            <p class="card-text">Ficamos na fila da loja em lançamento de jogo ou celular sem você dormir na rua.</p>
-                            <p class="fw-bold">R$ 3.000,67</p>
-                            <a href="./pages/contato.html" class="botao">Contratar</a>
-                        </div>
+                <div class="card">
+                    <img src="./img/fila_lancamento.jpg" alt="Lançamento de Eletrônicos">
+                    <div class="card-body">
+                        <h3 class="card-title">Lançamento de Celular e Games</h3>
+                        <p class="card-text">Ficamos na fila da loja em lançamento de jogo ou celular sem você dormir na rua.</p>
+                        <p class="preco-card">R$ 100,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_hospital.jpg" class="card-img-top" alt="Fila de Clínica">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Recepção de Clínica e Exames</h3>
-                            <p class="card-text">Pegamos senha cedo na clínica ou laboratório para você ir só na hora certa.</p>
-                            <p class="fw-bold">R$ 6.000,00</p>
-                            <a href="./pages/contato.html" class="botao">Contratar</a>
-                        </div>
+                <div class="card">
+                    <img src="./img/fila_hospital.jpg" alt="Fila de Clínica">
+                    <div class="card-body">
+                        <h3 class="card-title">Recepção de Clínica e Exames</h3>
+                        <p class="card-text">Pegamos senha cedo na clínica ou laboratório para você ir só na hora certa.</p>
+                        <p class="preco-card">R$ 380,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/fila_cartorio.jpg" class="card-img-top" alt="Fila de Cartório">
-                        <div class="card-body">
-                            <h3 class="card-title h5">Cartório e Documentos</h3>
-                            <p class="card-text">Esperamos a vez no cartório ou atendimento de documento para adiantar seu dia.</p>
-                            <p class="fw-bold">R$ 10.000,00</p>
-                            <a href="contato.html" class="botao">Contratar</a>
-                        </div>
+                <div class="card">
+                    <img src="./img/fila_cartorio.jpg" alt="Fila de Cartório">
+                    <div class="card-body">
+                        <h3 class="card-title">Cartório e Documentos</h3>
+                        <p class="card-text">Esperamos a vez no cartório ou atendimento de documento para adiantar seu dia.</p>
+                        <p class="preco-card">R$ 6.800,00</p>
+                        <a href="./pages/contato.html" class="botao">Contratar</a>
                     </div>
                 </div>
             </div>
